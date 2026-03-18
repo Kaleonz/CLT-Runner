@@ -6,10 +6,19 @@
 randomise();
 
 //Criação de instância especificamente pro obj_clt
-instance_create_layer(choose(28,152),-12,"Instances",choose(obj_clt,obj_batata,obj_chocolate,obj_coxinha));
+instance_create_layer(choose(28,152),-12,"Instances",choose(obj_clt,obj_hamburguer,obj_batata,obj_chocolate,obj_coxinha));
 
-//Rearmando o alarm pra tocar a cada 1s
-alarm[0] = 60;
-
+//SE a variável global pontos for maior ou igual a 100
+if (global.pontos >= 100)
+{
+	//O alarm 0 toca pela a metade do tempo (0.5s)
+	alarm[0] = 60/2;
+}
+//SE NÃO
+else
+{
+	//O alarm é armado pra 1s
+	alarm[0] = 60;
+}
 
 

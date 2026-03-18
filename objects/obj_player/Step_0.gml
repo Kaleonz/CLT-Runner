@@ -21,3 +21,22 @@ if keyboard_check(vk_left)
 	image_xscale = 1;
 }
 
+//SE a variáveç global pontos for maior ou igual a 100
+if (global.pontos >= 100)
+{
+	//a variável temporária _lay_id guarda o id da Layer Background
+	var _lay_id  = layer_get_id("Background")
+	//Então a velocidade vertical dessa layer passa a ser 2
+	layer_vspeed(_lay_id,2);
+	//Isso faz com que ao atingir 100 pontos o cenário
+	//rode mais rápido
+	
+	//e o sprite do obj roda mais rápido
+	sprite_set_speed(sprite_index,30,spritespeed_framespersecond);
+} 
+//SE NÃO
+else
+{
+	//o sprite roda como antes
+	sprite_set_speed(sprite_index,10,spritespeed_framespersecond);
+}

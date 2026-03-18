@@ -1,27 +1,28 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-//Falando que a cada frame, a var vel vai incrementar no valor de Y
-y += vel
+//determinando que a vel dele é igual a 2
+vel = 1;
 
-//se o X for maior que 90
+//SE o x for maior que 90
 if (x>90)
 {
-	//Então o sentido da imagem se inverte
+	//O sprite é invertido
 	image_xscale = -1
 }
 
 //SE a variável global pontos for maior ou igual a 100
 if (global.pontos >= 100)
 {
-	//A velocidade do obj é igual a 2
-	vel = 2;
-	//E ele vai rodar mais rápido
+	//Então a velocidade desse obj passa a ser 2
+	vel = 2
+	//E o sprite dele acelera
 	sprite_set_speed(sprite_index,30,spritespeed_framespersecond);
 }
-//SE NÃO
+//SE Não
 else
 {
-	//O sprite vai rodar como antes
+	//O sprite dele fica da mesma maneira
 	sprite_set_speed(sprite_index,10,spritespeed_framespersecond);
 }
+

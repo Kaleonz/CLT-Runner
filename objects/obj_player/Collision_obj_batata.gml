@@ -9,5 +9,5 @@ instance_destroy(other); //o "other" √© pra destruir o outro objeto que ele est√
 //Ao colidirem o som de pegar moeda vai tocar
 audio_play_sound(snd_coin,1,0);
 
-
-
+//Quando colidirem vai aumentar
+global.pontos += valorcox

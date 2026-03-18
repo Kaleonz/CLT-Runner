@@ -4,7 +4,7 @@
 //A room recomeça
 room_restart();
 
-
-
+//Os pontos são zerados
+global.pontos = 0
 
 

@@ -7,7 +7,8 @@ instance_destroy(other); //nesse caso destroí a coxinha
 //Quando colidirem, ele vai tocar o som de moeda
 audio_play_sound(snd_coin,1,0);
 
-
+//Quando colidir vai aumentar a quantidade de pontos
+global.pontos += valorcox
 
 
 

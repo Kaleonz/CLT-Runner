@@ -1,10 +1,8 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-audio_stop_sound(snd_musicbg);
-
-audio_play_sound(snd_musicbg,2,1);
-
+//falando que a vel dele vai incrementar em y
+y += vel;
 
 
 

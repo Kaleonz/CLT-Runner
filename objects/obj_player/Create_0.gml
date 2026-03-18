@@ -11,4 +11,4 @@ alarm[0] = 60;
 //Armando o alarm 1 pra tocar 1s
 //alarm[1] = 60;
 
-
+valorcox = 5
